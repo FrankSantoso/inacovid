@@ -1,0 +1,19 @@
+[package]
+name = "inacovid"
+version = "0.1.1"
+authors = ["Alex Adhyatma <alex@asiatech.dev>"]
+edition = "2018"
+
+[dependencies]
+reqwest = { version = "~0.10", features = ["json"] }
+tokio = { version = "0.2", features = ["full"] }
+sqlx = { version = "0.3.4", default-features = false, features = [ "runtime-tokio", "postgres", "macros", "bigdecimal", "chrono"] }
+serde = "~1.0"
+serde_derive = "~1.0"
+serde_json = "~1.0"
+url = "~2.1"
+chrono = { version = "~0.4", features = ["serde" ]}
+failure = "~0.1"
+futures = "~0.3"
+clap = { version = "3.0.0-beta.1", git = "https://github.com/clap-rs/clap/" }
+qstring = "~0.7"

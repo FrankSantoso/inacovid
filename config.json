@@ -1,0 +1,4 @@
+{
+    "postgresDsn": "postgres://postgres:mypass@127.0.0.1:5432/inacovid?sslmode=disable",
+    "jsonOutputDir": "/tmp/inacovid/"
+}
